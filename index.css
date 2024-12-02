@@ -81,3 +81,31 @@ html{
     border-radius: 5px;
 
 }
+@media (max-width: 768px) {
+    html {
+        background-size: contain;
+    }
+    .body {
+        flex-direction: column; /* Перестраиваем элементы в колонку */
+        margin: 5vh 10px;
+    }
+    .main__text_info {
+        width: 90%; /* Увеличиваем ширину до почти полного экрана */
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    .main__text_info_h1 {
+        font-size: 3em; /* Уменьшаем размер заголовка */
+    }
+    .main__timer {
+        font-size: 2em; /* Уменьшаем размер таймера */
+    }
+    .main__content {
+        width: 90%; /* Уменьшаем ширину для изображения */
+        margin-top: 15px;
+    }
+    .dailyImage {
+        width: 100%; /* Изображение занимает всю ширину */
+        border-radius: 10px; /* Добавляем более округлые углы */
+    }
+}
