@@ -6,7 +6,7 @@ textContainer.appendChild(textElement);
 
 document.addEventListener('DOMContentLoaded', () => {
     const timerElement = document.querySelector('.main__timer');
-
+    const textNewYearElement = document.querySelector('.main__text_info_h1');
     function updateTimer() {
         const now = new Date();
         const targetDate = new Date('2025-01-01T00:00:00');
@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const diffInMs = targetDate - now;
 
         if (diffInMs <= 0) {
-            timerElement.textContent = "С Новым годом!";
+            timerElement.textContent = "";
+            textNewYearElement.textContent="С новым 2025 годом!";
+
             return;
         }
 
